@@ -1,0 +1,14 @@
+/*
+Theme Name: Cultural Engineering Child Theme
+Theme URI: http://sawvideo.com
+Author: Tiffany Tse Design and Development
+Author URI: http://tiffanytse.ca
+Description: A custom theme created for the SAW Video Cultural Engineering Project.
+Version: 1.0
+Template: genesis
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: culturalengineering.ca
+*/
+
+@import url("../genesis/style.css");
