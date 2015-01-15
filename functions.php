@@ -1,10 +1,11 @@
 <?php
-//* Do NOT include the opening php tag
+
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
-// Add featured image above title for individual page
+
+//* Add featured image above title for individual page
 add_action( 'genesis_entry_header', 'single_post_featured_image', 5 );
 
 function single_post_featured_image() {	
@@ -14,6 +15,7 @@ function single_post_featured_image() {
     printf( '%s', $img );
 }
 
+
 //* Customize the post meta function
 add_filter( 'genesis_post_meta', 'sp_post_meta_filter' );
 function sp_post_meta_filter($post_meta) {
@@ -22,6 +24,7 @@ function sp_post_meta_filter($post_meta) {
   	return $post_meta;
   }
 }
+
 
 //* Customize the credits
 add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_text' );
