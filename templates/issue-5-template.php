@@ -1,9 +1,9 @@
 <?php
 
 /**
-* Template Name: Issue 1 Template
+* Template Name: Issue 5 Template
 * Description: Used as a page template to show page contents, followed by a loop 
-* through the "Issue 1" category
+* through the "Issue 5" category
 */
 
 // Add our custom loop
@@ -12,7 +12,7 @@ add_action( 'genesis_loop', 'issue_loop' );
 function issue_loop() {
 
 	$args = array(
-		'category_name' => 'issue-1', // replace with your category slug
+		'category_name' => 'issue-5', // replace with your category slug
 		'orderby'       => 'post_date',
 		'order'         => 'DESC',
 		'posts_per_page'=> '12', // overrides posts per page in theme settings

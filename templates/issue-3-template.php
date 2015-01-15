@@ -24,10 +24,6 @@ function issue_loop() {
 		// loop through posts
 		while( $loop->have_posts() ): $loop->the_post();
 
-		//$video_id = esc_attr( genesis_get_custom_field( 'cd_youtube_id' ) );
-		//$video_thumbnail = '<img src="http://img.youtube.com/vi/' . $video_id . '/0.jpg" alt="" />';
-		//$video_link = 'http://www.youtube.com/watch?v=' . $video_id;
-
 		echo '<a href="' . get_permalink() . '" class="clearfix one-fourth">';
 		echo '<div class="">';
 			echo '<h4>' . get_the_title() . '</h4>';
