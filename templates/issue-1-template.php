@@ -24,10 +24,10 @@ function issue_loop() {
 		// loop through posts
 		while( $loop->have_posts() ): $loop->the_post();
 
-		echo '<a href="' . get_permalink() . '" class="clearfix one-fourth">';
+		echo '<a href="' . get_permalink() . '" class="clearfix one-fourth issue-blocks">';
 		echo '<div class="">';
-			echo '<h4>' . get_the_title() . '</h4>';
 			echo get_the_post_thumbnail( $post_id, 'medium' ); 
+			echo '<h4>' . get_the_title() . '</h4>';
 			echo the_excerpt();
 		echo '</div>';
     echo '</a>';

@@ -6,8 +6,8 @@
 */
 
 // Add our custom loop
-
-add_action( 'genesis_loop', 'custom_map', 5);
+add_action( 'genesis_after_header', 'custom_map' );
+//add_action( 'genesis_loop', 'custom_map', 5);
 
 function custom_map() { 
   echo do_shortcode('[google_maps id="50"]');
