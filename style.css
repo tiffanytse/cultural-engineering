@@ -10,187 +10,209 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: culturalengineering.ca
 */
-
 @import url("../genesis/style.css");
-
-.mm-list li{
-	display: block;
-	margin-left: 0;
+/* line 3, sass/_main.scss */
+.mm-list li {
+  display: block;
+  margin-left: 0;
+}
+/* line 6, sass/_main.scss */
+.mm-list li:after {
+  margin-left: 0;
 }
 
- .mm-list > li:after {
-	margin-left: 0;
+/* line 12, sass/_main.scss */
+html.mm-opened {
+  margin-top: 0 !important;
 }
 
-html.mm-opened{
-	margin-top: 0 !important;
+/* line 16, sass/_main.scss */
+#mobile-header {
+  position: absolute;
+  right: 1em;
 }
 
-#mobile-header{
-	position: absolute;
-	right: 1em ;
+/* line 21, sass/_main.scss */
+html.mm-opened .logged-in #mobile-header {
+  top: 32px;
 }
 
-html.mm-opened .logged-in #mobile-header{
-	top: 32px;
+/* line 25, sass/_main.scss */
+.banner-issue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -75px;
+  background-attachment: fixed;
 }
 
-.banner-issue{
-	background-size: cover;
-	background-repeat: no-repeat;
-    background-position: 0 -75px ;
-    background-attachment: fixed;
-
+/* line 32, sass/_main.scss */
+.banner-issue .site-inner {
+  position: relative;
+  height: 450px;
 }
 
-.banner-issue .site-inner{
-	position: relative;
-		height: 450px;
+/* line 37, sass/_main.scss */
+.site-inner .description {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #fff;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2em 2em 0;
 }
 
-.site-inner .description{
-	position: absolute;
-	top: 20%;
-	left: 5%;
-	color: #fff;
-	max-width: 500px;
-
-	background: rgba(0,0,0, .4);
-	padding: 2em 2em 0;
+/* line 48, sass/_main.scss */
+.description h2 {
+  color: #fff;
 }
 
-.description h2{
-	color: #fff;
+/* line 52, sass/_main.scss */
+.post-25 {
+  display: none;
 }
 
-.post-25{
-	display: none;
+/* line 56, sass/_main.scss */
+.home .site-inner {
+  padding-top: 0;
 }
 
-.home .site-inner{
-	padding-top: 0;
+/* line 60, sass/_main.scss */
+.banner-issue .newest-issue-url {
+  background-color: #e5554e;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  color: #fff;
+  padding: 1em;
+  font-weight: bold;
+  border-radius: 3px;
 }
 
-.banner-issue .newest-issue-url{
-	background-color: #e5554e;
-	position: absolute;
-	right: 5%;
-	top: 40%;
-	color: #fff;
-	padding: 1em;
-	font-weight: bold;
-	border-radius: 3px;
+@media only screen and (min-width: 60em) {
+  /* line 73, sass/_main.scss */
+  .banner-issue .newest-issue-url {
+    right: 20%;
+    top: 40%;
+  }
 
+  /* line 78, sass/_main.scss */
+  .site-inner .description {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
 }
-
-@media only screen and (min-width: 60em){
-.banner-issue .newest-issue-url{
-	right: 20%;
-	top: 40%;
-
-}
-.site-inner .description{
-	position: absolute;
-	top: 20%;
-	left: 5%;
-}
-}
-
 /* Hide desktop menu when mobile */
-.site-container .nav-primary{
-	display: none;
+/* line 86, sass/_main.scss */
+.site-container .nav-primary {
+  display: none;
 }
 
-@media only screen and (min-width: 60em){
-	#mobile-header{
-		display: none;
-	}
-	.site-container .nav-primary{
-	display: block;
-	}
+@media only screen and (min-width: 60em) {
+  /* line 91, sass/_main.scss */
+  #mobile-header {
+    display: none;
+  }
+
+  /* line 94, sass/_main.scss */
+  .site-container .nav-primary {
+    display: block;
+  }
+}
+/* line 99, sass/_main.scss */
+.col-1 {
+  width: 30%;
+  float: left;
+  display: inline-block;
 }
 
-.col-1{
-	width: 30%;
-	float: left;
-	display: inline-block;
-}
+/* line 104, sass/_main.scss */
 .col-2,
-.col-3, 
-.col-4, 
-.col-5{
-	width: 17.5%;
-	float: left;
-	display: inline-block;
+.col-3,
+.col-4,
+.col-5 {
+  width: 17.5%;
+  float: left;
+  display: inline-block;
 }
 
-.issue-blocks{
-	background-color: #fff;
-	padding: 1em;
-	box-sizing: border-box;
-	margin-bottom: 1em;
-	border: 1px solid #f5f5f5;
-	min-height: 325px;
+/* line 113, sass/_main.scss */
+.issue-blocks {
+  background-color: #fff;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  border: 1px solid #f5f5f5;
+  min-height: 325px;
 }
 
-.post-image{
-	max-height: 200px;
-	width: 100%;
-	overflow: hidden;
+/* line 122, sass/_main.scss */
+.post-image {
+  max-height: 200px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.issue-blocks:hover{
-	border: 1px solid #e5554e;
+/* line 128, sass/_main.scss */
+.issue-blocks:hover {
+  border: 1px solid #e5554e;
 }
-
 
 /* Footer Widgets */
-
-.footer-widgets .entry{
-	border-bottom: 0;
+/* line 135, sass/_main.scss */
+.footer-widgets .entry {
+  border-bottom: 0;
 }
 
+/* line 139, sass/_main.scss */
 a.more-link {
-display: block;
-clear: both;
-text-align: right;
+  display: block;
+  clear: both;
+  text-align: right;
 }
 
-.sawvideo{
-	margin-top: 1em;
-	display: block;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	height: 65px;
-	width: 200px;
-	background: url('images/sawvideo.png');
+/* line 145, sass/_main.scss */
+.sawvideo {
+  margin-top: 1em;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 65px;
+  width: 200px;
+  background: url("images/sawvideo.png");
 }
 
-.sponsors a{
-	background-color: #f5f5f5;
-	padding: .5em;
-	margin: 5px;
-	display: inline-block;
+/* line 156, sass/_main.scss */
+.sponsors a {
+  background-color: #f5f5f5;
+  padding: .5em;
+  margin: 5px;
+  display: inline-block;
 }
 
-.sponsors p{
-	margin-top: 2em;
-	margin-bottom: .5em;
+/* line 163, sass/_main.scss */
+.sponsors p {
+  margin-top: 2em;
+  margin-bottom: .5em;
 }
 
-.alignleft img{
-	margin: 0 24px 24px 0;
+/* line 168, sass/_main.scss */
+.alignleft img {
+  margin: 0 24px 24px 0;
 }
 
-.site-footer{
-	text-align: left;
+/* line 172, sass/_main.scss */
+.site-footer {
+  text-align: left;
 }
 
-.creds{
-	clear: both;
-	margin-top: 5em;
-	float: right;
-	text-align: right;
-	font-size: .75em;
+/* line 176, sass/_main.scss */
+.creds {
+  clear: both;
+  margin-top: 5em;
+  float: right;
+  text-align: right;
+  font-size: .75em;
 }
