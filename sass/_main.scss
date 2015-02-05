@@ -1,4 +1,11 @@
+// Header
 
+html.mm-opened{
+	margin-top: 0 !important;
+	.logged-in #mobile-header{
+		top: 32px;
+	}
+}
 
 .mm-list li{
   display: block;
@@ -8,78 +15,78 @@
   }
 }
 
-
-html.mm-opened{
-	margin-top: 0 !important;
-}
-
 #mobile-header{
 	position: absolute;
 	right: 1em ;
 }
 
-html.mm-opened .logged-in #mobile-header{
-	top: 32px;
+a{
+	color: $orange;
 }
+
+.site-header{
+	background: $black;
+	min-height: 0px;
+	.title-area{padding: 0;}
+	.wrap{padding: 13px 5%;}
+	.site-title{
+		text-align: left;
+		@include rem-fallback(font-size, 1.375);
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	a{
+		color: #fff;
+		&:hover{
+			color: darken(#fff, 20%);
+		}
+	}
+}
+
 
 .banner-issue{
   background-size: cover;
   background-repeat: repeat-y;
   background-position: 0 -75px ;
   background-attachment: fixed;
-}
-
-.banner-issue .site-inner{
-	position: relative;
+	.newest-issue-url{
+		background-color: $orange;
+		position: absolute;
+		right: 5%;
+		top: 40%;
+		color: #fff;
+		padding: 1em;
+		font-weight: bold;
+		border-radius: 3px;
+	}
+	.site-inner{
+		position: relative;
 		height: 450px;
-}
+		.description{
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			color: #fff;
+			max-width: 500px;
 
-.site-inner .description{
-	position: absolute;
-	top: 20%;
-	left: 5%;
-	color: #fff;
-	max-width: 500px;
-
-	background: rgba(0,0,0, .4);
-	padding: 2em 2em 0;
-}
-
-.description h2{
-	color: #fff;
-}
-
-.post-25{
-	display: none;
-}
-
-.home .site-inner{
-	padding-top: 0;
-}
-
-.banner-issue .newest-issue-url{
-	background-color: #e5554e;
-	position: absolute;
-	right: 5%;
-	top: 40%;
-	color: #fff;
-	padding: 1em;
-	font-weight: bold;
-	border-radius: 3px;
-
+			background: rgba(0,0,0, .4);
+			padding: 2em 2em 0;
+		}
+	}
 }
 
 @media only screen and (min-width: 60em){
-.banner-issue .newest-issue-url{
-	right: 20%;
-	top: 40%;
+	.banner-issue .newest-issue-url{
+		right: 20%;
+		top: 40%;
 
-}
-.site-inner .description{
-	position: absolute;
-	top: 20%;
-	left: 5%;
-}
+	}
+	.site-inner .description{
+		position: absolute;
+		top: 20%;
+		left: 5%;
+	}
 }
 
 /* Hide desktop menu when mobile */
@@ -96,11 +103,24 @@ html.mm-opened .logged-in #mobile-header{
 	}
 }
 
+.post-25{
+	display: none; // Hides padding of hidden content area
+}
+
+.home .site-inner{
+	padding-top: 0;
+}
+
+.description h2{
+	color: #fff;
+}
+
 .col-1{
 	width: 30%;
 	float: left;
 	display: inline-block;
 }
+
 .col-2,
 .col-3, 
 .col-4, 

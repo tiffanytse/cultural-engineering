@@ -21,7 +21,7 @@ function single_post_featured_image() {
 add_filter( 'genesis_post_meta', 'sp_post_meta_filter' );
 function sp_post_meta_filter($post_meta) {
   if ( !is_page() ) {
-  	$post_meta = '[post_tags before="Tagged: "]';
+  	$post_meta = '[post_tags before=" <i>Tagged: </i> "]';
   	return $post_meta;
   }
 }

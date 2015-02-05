@@ -1,23 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Colors
+$orange: #df5900;
+$blue: #0d8db1;
+$black: #222222;
+$light-grey: #f5f5f5;
+$medium-grey: #cccccc;
 
 
 // Imports Compass stylesheets for css3 stuff
 @import "compass";
+@import "zen";
 @import "mixins";
