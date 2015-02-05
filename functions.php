@@ -73,7 +73,7 @@ function wpb_list_child_pages() {
   $pageChildren =  get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order', 'hierarchical' => '0' ) );
   if ( $pageChildren ) {
     foreach ( $pageChildren as $pageChild ) {
-      echo '<section class="issue-blocks one-fourth"><a href="'. get_permalink($pageChild->ID) .'"><h2>' . $pageChild->post_title .'</h2>'. get_the_post_thumbnail($pageChild->ID).'</section></a>';
+      echo '<section class="issue-blocks one-fourth"><a href="'. get_permalink($pageChild->ID) .'"><h2>' . $pageChild->post_title .'</h2>'. get_the_post_thumbnail($pageChild->ID, 'medium').'</section></a>';
       if ($pageChild->post_excerpt){
         echo '<p>'. $pageChild->post_excerpt.'</p>';
       }
