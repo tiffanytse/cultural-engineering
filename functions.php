@@ -135,7 +135,7 @@ add_action('genesis_footer', 'wdm_add_footer_menu');
 function wdm_add_footer_menu()
 {
     echo '<div class="presented-by col-1">';
-    echo '<p class="by-line">A Project of SAW Video</p>';
+    echo '<p class="by-line">A Project of SAW Video Media Art Centre</p>';
     echo '<a href="http://sawvideo.com" class="sawvideo">SAW Video</a>';
     echo '<div class="sponsors">';
     echo '<p>Funding Sponsors</p>';
