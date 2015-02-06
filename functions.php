@@ -61,7 +61,8 @@ function culturalengineering_load_scripts() {
       ?>
       <div id="mobile-header">
           <a href="#menu">
-              <i class="fa fa-bars">Mobile Menu</i>
+              <i class="i-menu"></i>
+              <span>Mobile Menu</span>
           </a>
       </div>
       <?php

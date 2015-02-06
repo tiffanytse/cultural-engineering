@@ -3,21 +3,46 @@
 html.mm-opened{
 	margin-top: 0 !important;
 	.logged-in #mobile-header{
-		top: 32px;
+		top: 46px;
+		@media only screen and (min-width: 783px){
+			top: 32px;
+		}
+	}
+	.logged-in .site-header{
+		margin-top: 46px;
+		@media only screen and (min-width: 783px){
+			margin-top: 32px;
+		}
 	}
 }
 
 .mm-list li{
   display: block;
   margin-left: 0;
+  @include rem-fallback(font-size, 1);
   &:after{
     margin-left: 0;
   }
+  a, 
+  span{
+		padding: .75em .75em .75em 20px;
+  }
+	a.mm-subopen:before {
+		border-color: rgba(0, 0, 0, .3);
+	}
+}
+
+nav.mm-menu{
+	background: $black;
+	.mm-list li:after {
+		border-color: rgba(0, 0, 0, .3);
+	}
 }
 
 #mobile-header{
 	position: absolute;
-	right: 1em ;
+	right: 5%;
+	top: 5px;
 }
 
 a{
@@ -43,6 +68,27 @@ a{
 		}
 	}
 }
+
+#mobile-header{
+	i{
+		padding: .15em .3em .15em .25em;
+		border: 1px solid rgba(255, 255, 255, .3);
+		display: inline-block;
+		color:#fff;
+		@include border-radius(4px);
+		@include rem-fallback(font-size, 1.25);
+
+	}
+	a{
+		&:hover{
+			@include opacity(.8);
+		}
+	}
+	span{
+		@include element-invisible;
+	}
+}
+
 
 
 .banner-issue{
