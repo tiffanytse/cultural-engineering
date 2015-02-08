@@ -25,11 +25,15 @@ html.mm-opened{
   }
   a, 
   span{
-		padding: .75em .75em .75em 20px;
+		padding: 1em !important;
   }
-	a.mm-subopen:before {
-		border-color: rgba(0, 0, 0, .3);
-	}
+  a.mm-subopen:before {
+    border-color: rgba(0, 0, 0, .3);
+  }
+}
+
+.mm-list a.mm-subclose{
+  padding-top: 2.2em !important;
 }
 
 nav.mm-menu{
@@ -42,7 +46,63 @@ nav.mm-menu{
 #mobile-header{
 	position: absolute;
 	right: 5%;
-	top: 5px;
+	top: 7px;
+}
+.logged-in{
+  #mobile-header{
+    top: 5px;
+  }
+}
+
+// Social Media 
+nav.nav-primary li.social-icon {
+  display: inline-block;
+  &:after{
+    border-color: $black !important;
+  }
+  a{
+    border: 1px solid rgba(255, 255, 255, .3);
+    width: 40px;
+    height: 40px;
+    padding: .65em !important;
+    @include border-radius(3px);
+    margin-left: 1em;
+    margin-top: .5em;
+    @include ease(all, 250ms, ease-in-out);
+
+    &:hover{
+      border: 1px solid $orange;
+      color:$orange;
+    }
+    @media only screen and (min-width: 60em){
+      margin-left: 10px;
+      margin-top: .6em;
+    }
+    i{
+      @include rem-fallback(font-size, 1.25);
+      color: rgba(255, 255, 255, .8);
+      &.icon-facebook{
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
+nav.nav-primary {
+  background: $black;
+  float: right;
+  padding-right: 5%;
+  &#menu{
+    position: relative;
+    z-index: 1000;
+    margin-top: -3.1em;
+  }
+  .genesis-nav-menu a{
+    padding: 10px 1em;
+  }
+  .social-icon a{
+    margin-left: inherit;
+  }
 }
 
 a{
@@ -71,25 +131,25 @@ a{
 
 #mobile-header{
 	i{
-		padding: .15em .3em .15em .25em;
+		padding: .1em .3em .15em .25em;
 		border: 1px solid rgba(255, 255, 255, .3);
 		display: inline-block;
-		color:#fff;
+		color:rgba(255, 255, 255, .8);
 		@include border-radius(4px);
 		@include rem-fallback(font-size, 1.25);
-
+    @include ease(all, 250ms, ease-in-out);
 	}
 	a{
 		&:hover{
-			@include opacity(.8);
+      i{
+        border: 1px solid $orange;
+      }
 		}
 	}
 	span{
 		@include element-invisible;
 	}
 }
-
-
 
 .banner-issue{
   background-size: cover;
@@ -98,7 +158,7 @@ a{
   background-attachment: fixed;
 	.newest-issue-url{
 		background-color: $orange;
-		position: absolute;
+		//position: absolute;
 		right: 5%;
 		top: 40%;
 		color: #fff;
