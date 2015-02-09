@@ -1,0 +1,26 @@
+h1,
+h2, 
+h3, 
+h4,
+h5,
+h6{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h1.entry-title{
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 1em;
+}
+
+.entry-tags span{
+  @include element-invisible;
+}
+
+.entry-tags i{
+  @extend .custom-icon;
+  @extend .i-tags;
+  color: #777;
+}
