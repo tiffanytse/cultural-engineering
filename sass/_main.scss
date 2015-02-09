@@ -295,6 +295,9 @@ a{
   .social-icon i{
     display: none;
   }
+  p{
+    margin: 0 0 .5em;
+  }
 }
 
 .sponsors{
@@ -355,21 +358,12 @@ text-align: right;
   }
 }
 
-.sponsors p{
-	margin-top: 2em;
-	margin-bottom: .5em;
-}
-
 .alignleft img{
 	margin: 0 24px 24px 0;
 }
 
 .site-footer{
 	text-align: left;
-}
-
-.by-line{
-  font-weight: bold;
 }
 
 .creds{
