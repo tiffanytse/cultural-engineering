@@ -21,7 +21,7 @@ function single_post_featured_image() {
 add_filter( 'genesis_post_meta', 'sp_post_meta_filter' );
 function sp_post_meta_filter($post_meta) {
   if ( !is_page() ) {
-  	$post_meta = '[post_tags before=" <i>Tagged: </i> "]';
+  	$post_meta = '[post_tags before=" <i></i><span>Tagged: </span> "]';
   	return $post_meta;
   }
 }
@@ -71,10 +71,10 @@ function culturalengineering_load_scripts() {
 //* Add Child Page Shortcode
 function wpb_list_child_pages() { 
   global $post; 
-  $pageChildren =  get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order', 'hierarchical' => '0' ) );
+  $pageChildren =  get_pages( array( 'child_of' => $post->ID, 'orderby'       => 'post_date', 'hierarchical' => '0' ) );
   if ( $pageChildren ) {
     foreach ( $pageChildren as $pageChild ) {
-      echo '<section class="issue-blocks one-fourth"><a href="'. get_permalink($pageChild->ID) .'"><h2>' . $pageChild->post_title .'</h2>'. get_the_post_thumbnail($pageChild->ID, 'medium').'</section></a>';
+      echo '<section class="issue-blocks issue-'. $pageChild->ID .'"><div class="inner"><a href="'. get_permalink($pageChild->ID) .'">'. get_the_post_thumbnail($pageChild->ID, 'medium').'<h2>' . $pageChild->post_title .'</h2>'. '</div></section></a>';
       if ($pageChild->post_excerpt){
         echo '<p>'. $pageChild->post_excerpt.'</p>';
       }
@@ -140,10 +140,11 @@ function wdm_add_footer_menu()
     echo '<a href="http://sawvideo.com" class="sawvideo">SAW Video</a>';
     echo '<div class="sponsors">';
     echo '<p>Funding Sponsors</p>';
-    echo '<a href="#" class="">Canada Council for the Arts</a>';
-    echo '<a href="#" class="">City of Ottawa</a>';
-    echo '<a href="#" class="">Community Arts + Social Engagement</a>';
-    echo '<a href="#" class="">Ontario Arts Council</a>';
+    echo '<a href="http://www.canadacouncil.ca/" class="cc" target="_blank" title="Canada Council for the Arts">Canada Council for the Arts</a>';
+    echo '<a href="http://ottawa.ca/en/liveculture/community-arts-and-social-engagement" class="case"  target="_blank" title="Community Arts + Social Engagement">Community Arts + Social Engagement</a>';
+    echo '<a href="http://www.arts.on.ca/site4.aspx" class="oac" target="_blank" title="Ontario Arts Council">Ontario Arts Council</a>';
+    echo '<a href="http://ottawa.ca/en" target="_blank" title="City of Ottawa" class="ottawa">City of Ottawa</a>';
+
     echo '</div>';
     echo '</div>';
     wp_nav_menu(array(

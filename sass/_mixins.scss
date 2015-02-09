@@ -114,12 +114,14 @@ $public_path: "../";
 // Usage: 
 // @include background-image-retina($file, $type, $width, $height);
 @mixin background-image-retina($file, $type, $width, $height) {
-  background-image: url('../images/' + $file + '.' + $type);
-
+  background-image: url('images/' + $file + '.' + $type);
+  background-repeat: no-repeat;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
     & {
-      background-image: url($file + '@2x.' + $type);
+      background-image: url('images/' + $file + '@2x.' + $type);
       background-size: $width $height;
+      background-repeat: no-repeat;
+
     }
   }
 }
