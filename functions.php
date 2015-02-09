@@ -157,7 +157,7 @@ function wdm_add_footer_menu()
     wp_nav_menu(array(
       'sort_column' => 'menu_order',
       'menu'            => 'Footer Navigation Menu 1',
-      'container_id' => 'footer_1' ,
+      'container_id' => 'footer_2' ,
       'menu_class' => 'menu-tertiary',
       'theme_location' => 'footer_2',
       'depth' => 1,
@@ -166,7 +166,7 @@ function wdm_add_footer_menu()
     wp_nav_menu(array(
       'sort_column' => 'menu_order',
       'menu'            => 'Footer Navigation Menu 1',
-      'container_id' => 'footer_1' ,
+      'container_id' => 'footer_3' ,
       'menu_class' => 'menu-tertiary',
       'theme_location' => 'footer_3',
       'depth' => 1,
@@ -175,7 +175,7 @@ function wdm_add_footer_menu()
     wp_nav_menu(array(
       'sort_column' => 'menu_order',
       'menu'            => 'Footer Navigation Menu 1',
-      'container_id' => 'footer_1' ,
+      'container_id' => 'footer_4' ,
       'menu_class' => 'menu-tertiary',
       'theme_location' => 'footer_4',
       'depth' => 1,

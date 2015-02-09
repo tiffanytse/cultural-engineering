@@ -31,7 +31,7 @@ function banner_issue() {
 		echo '<div class="site-inner">';
 		echo '<div class="description">'; 
 		echo '<h2>' . get_the_title() . '</h2>';
-		echo the_content() . '</div>';
+		echo the_content();
 		echo '<a class="newest-issue-url" href="';
 			if(function_exists('get_custom_field_data')) { 
 				get_custom_field_data('feature-url', true);
@@ -41,6 +41,7 @@ function banner_issue() {
 				get_custom_field_data('feature-button-name', true);
 			}
 		echo '</a>';
+		echo '</div>';
 		echo '</div>';
 	    echo '</section>';
 		endwhile;

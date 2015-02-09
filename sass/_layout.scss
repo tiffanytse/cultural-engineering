@@ -1,6 +1,37 @@
+// Fix width issue in header
 @media only screen and (max-width: 1200px){
-	.site-inner, 
-	.wrap{
-		max-width: 1200px;
-	}
+  .header{
+    .site-inner, 
+    .wrap{
+      max-width: 1200px;
+    }
+  }
+}
+
+.footer-widgets {
+  @media only screen and (min-width: 50em){
+    .wrap{
+      padding-left: 5%;
+      padding-right: 5%; 
+    }
+  }
+  @media only screen and (min-width: 60em){
+    .wrap{
+      padding-left:0;
+      padding-right:0; 
+    }
+  }
+  .featured-content img{
+    max-width: 100px;
+  }
+  a.more-link{
+    margin-top: 1em;
+    color: #fff;
+  }
+  a{
+    @include ease(color, 150ms, ease-in-out);
+  }
+  a:hover{
+    color: $orange;
+  }
 }

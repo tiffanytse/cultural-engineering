@@ -32,6 +32,13 @@ html.mm-opened{
   }
 }
 
+.mm-panel > .mm-list{
+  margin-left: -1em !important;
+  @media only screen and (min-width: 50em){
+    margin-left: 0 !important;
+  }
+}
+
 .mm-list a.mm-subclose{
   padding-top: 2.2em !important;
 }
@@ -90,8 +97,11 @@ nav.nav-primary li.social-icon {
 
 nav.nav-primary {
   background: $black;
-  float: right;
-  padding-right: 5%;
+  #menu-main-menu{
+    float: right;
+    padding-right: 1em;
+    width: auto;
+  }
   &#menu{
     position: relative;
     z-index: 1000;
@@ -111,15 +121,21 @@ a{
 
 .site-header{
 	background: $black;
-	min-height: 0px;
+	min-height: 52px;
+  @extend .cf;
 	.title-area{padding: 0;}
-	.wrap{padding: 13px 5%;}
+	.wrap{padding: 13px}
 	.site-title{
 		text-align: left;
 		@include rem-fallback(font-size, 1.375);
 		text-transform: uppercase;
 		font-weight: bold;
 		letter-spacing: 1px;
+    padding-right: 3em;
+    background-color: none;
+    position: relative;
+    z-index: 1001;
+    max-width: 375px;
 	}
 	a{
 		color: #fff;
@@ -153,54 +169,52 @@ a{
 
 .banner-issue{
   background-size: cover;
-  background-repeat: repeat-y;
   background-position: 0 -75px ;
   background-attachment: fixed;
-	.newest-issue-url{
-		background-color: $orange;
-		//position: absolute;
-		right: 5%;
-		top: 40%;
-		color: #fff;
-		padding: 1em;
-		font-weight: bold;
-		border-radius: 3px;
-	}
-	.site-inner{
+  @extend .cf;
+  @media only screen and (min-width: 961px){	
+    margin-top: 7px;
+  }
+  .site-inner{
 		position: relative;
-		height: 450px;
+    height: 425px;
+    font-size: 90%;
+    @media only screen and (min-width: 37.5em){
+      height: 500px;
+    }    
 		.description{
-			position: absolute;
-			top: 20%;
-			left: 5%;
+      width: 100%;
+      @include box-sizing(border-box);
 			color: #fff;
-			max-width: 500px;
-
 			background: rgba(0,0,0, .4);
-			padding: 2em 2em 0;
+			padding: 2em 2em 2em;
+      margin: 2em 0;
+      @media only screen and (min-width: 37.5em){
+        max-width: 550px;
+        position: relative;
+        top: 20%;
+        margin: 0 auto;
+      }
 		}
+    .newest-issue-url{
+      background-color: $orange;
+      color: #fff;
+      padding: 1em;
+      font-weight: bold;
+      border-radius: 3px;
+      margin-top: -.5em;
+      float: right;
+    }
 	}
 }
 
-@media only screen and (min-width: 60em){
-	.banner-issue .newest-issue-url{
-		right: 20%;
-		top: 40%;
-
-	}
-	.site-inner .description{
-		position: absolute;
-		top: 20%;
-		left: 5%;
-	}
-}
 
 /* Hide desktop menu when mobile */
 .site-container .nav-primary{
 	display: none;
 }
 
-@media only screen and (min-width: 60em){
+@media only screen and (min-width: 961px){
 	#mobile-header{
 		display: none;
 	}
@@ -209,7 +223,7 @@ a{
 	}
 }
 
-.post-25{
+.home .post-25{
 	display: none; // Hides padding of hidden content area
 }
 
@@ -257,10 +271,13 @@ a{
 
 
 /* Footer Widgets */
-
-.footer-widgets .entry{
-	border-bottom: 0;
+@media only screen and (min-width: 60em){
+  .footer-widgets .entry, 
+  .footer-widgets li{
+    border-bottom: 0;
+  }
 }
+
 
 a.more-link {
 display: block;
