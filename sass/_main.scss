@@ -279,6 +279,15 @@ a{
 }
 
 
+.site-footer{
+  .social-icon .fa-hidden{
+    position: static;
+  }
+  .social-icon i{
+    display: none;
+  }
+}
+
 a.more-link {
 display: block;
 clear: both;

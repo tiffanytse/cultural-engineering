@@ -538,14 +538,23 @@ a {
     border-bottom: 0;
   }
 }
-/* line 282, sass/_main.scss */
+/* line 283, sass/_main.scss */
+.site-footer .social-icon .fa-hidden {
+  position: static;
+}
+/* line 286, sass/_main.scss */
+.site-footer .social-icon i {
+  display: none;
+}
+
+/* line 291, sass/_main.scss */
 a.more-link {
   display: block;
   clear: both;
   text-align: right;
 }
 
-/* line 288, sass/_main.scss */
+/* line 297, sass/_main.scss */
 .sawvideo {
   margin-top: 1em;
   display: block;
@@ -557,7 +566,7 @@ a.more-link {
   background: url("images/sawvideo.png");
 }
 
-/* line 299, sass/_main.scss */
+/* line 308, sass/_main.scss */
 .sponsors a {
   background-color: #f5f5f5;
   padding: .5em;
@@ -565,23 +574,23 @@ a.more-link {
   display: inline-block;
 }
 
-/* line 306, sass/_main.scss */
+/* line 315, sass/_main.scss */
 .sponsors p {
   margin-top: 2em;
   margin-bottom: .5em;
 }
 
-/* line 311, sass/_main.scss */
+/* line 320, sass/_main.scss */
 .alignleft img {
   margin: 0 24px 24px 0;
 }
 
-/* line 315, sass/_main.scss */
+/* line 324, sass/_main.scss */
 .site-footer {
   text-align: left;
 }
 
-/* line 319, sass/_main.scss */
+/* line 328, sass/_main.scss */
 .creds {
   clear: both;
   margin-top: 5em;
