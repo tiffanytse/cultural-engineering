@@ -140,9 +140,9 @@ function wdm_add_footer_menu()
     echo '<a href="http://sawvideo.com" class="sawvideo">SAW Video</a>';
     echo '<div class="sponsors">';
     echo '<p>Funding Sponsors</p>';
-    echo '<a href="#" class="cc" target="_blank" title="Canada Council for the Arts">Canada Council for the Arts</a>';
-    echo '<a href="#" class="case"  target="_blank" title="Community Arts + Social Engagement">Community Arts + Social Engagement</a>';
-    echo '<a href="#" class="oac" target="_blank" title="Ontario Arts Council">Ontario Arts Council</a>';
+    echo '<a href="http://www.canadacouncil.ca/" class="cc" target="_blank" title="Canada Council for the Arts">Canada Council for the Arts</a>';
+    echo '<a href="http://ottawa.ca/en/liveculture/community-arts-and-social-engagement" class="case"  target="_blank" title="Community Arts + Social Engagement">Community Arts + Social Engagement</a>';
+    echo '<a href="http://www.arts.on.ca/site4.aspx" class="oac" target="_blank" title="Ontario Arts Council">Ontario Arts Council</a>';
     echo '<a href="http://ottawa.ca/en" target="_blank" title="City of Ottawa" class="ottawa">City of Ottawa</a>';
 
     echo '</div>';
