@@ -19,7 +19,8 @@
 }
 */
  
- [class^="i-"]:before, [class*=" i-"]:before {
+ [class^="i-"]:before, [class*=" i-"]:before, 
+ .custom-icon{
   font-family: "culturalengineering-custom";
   font-style: normal;
   font-weight: normal;

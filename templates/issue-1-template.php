@@ -6,8 +6,11 @@
 * through the "Issue 1" category
 */
 
+
 // Add our custom loop
 add_action( 'genesis_loop', 'issue_loop' );
+
+
 
 function issue_loop() {
 
@@ -24,8 +27,8 @@ function issue_loop() {
 		// loop through posts
 		while( $loop->have_posts() ): $loop->the_post();
 
-		echo '<a href="' . get_permalink() . '" class="clearfix one-fourth issue-blocks">';
-		echo '<div class="">';
+		echo '<a href="' . get_permalink() . '" class="clearfix issue-blocks">';
+		echo '<div class="inner">';
 			echo get_the_post_thumbnail( $post_id, 'medium' ); 
 			echo '<h4>' . get_the_title() . '</h4>';
 			echo the_excerpt();

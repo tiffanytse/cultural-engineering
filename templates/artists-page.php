@@ -6,7 +6,6 @@
 */
 // Hide regular entry content
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
-remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
 
 // Add our custom loop
@@ -32,8 +31,10 @@ function artist_loop() {
 			echo '<div class="image-thumbnail">';
 			echo get_the_post_thumbnail( $post_id, 'thumbnail' ); 
 			echo '</div>';
+			echo '<div class="artist-content">';
 			echo '<h4>' . get_the_title() . '</h4>';
 			echo the_content();
+			echo '</div>';
 		echo '</div>';
     echo '</a>';
 		endwhile;
