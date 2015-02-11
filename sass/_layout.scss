@@ -1,5 +1,5 @@
 // Grids
-$zen-column-count: 6; // Set the total number of columns in the grid.
+$zen-column-count: 12; // Set the total number of columns in the grid.
 $zen-gutter-width: 20px; 
 
 .footer .wrap, 
@@ -78,28 +78,28 @@ main.content,
   #footer_2,
   #footer_3,
   #footer_4{
-    @include zen-grid-item(6, 1);
+    @include zen-grid-item(12, 1);
     @include zen-clear();
 
   }
   @media only screen and (min-width: 60em){
     .col-1{
-      @include zen-grid-item(2, 1);
+      @include zen-grid-item(4, 1);
     }
     #footer_1{
-      @include zen-grid-item(1, 3);
+      @include zen-grid-item(2, 5);
       @include zen-clear(none);
     }
     #footer_2{
-      @include zen-grid-item(1, 4);
+      @include zen-grid-item(2, 7);
       @include zen-clear(none);
     }
     #footer_3{
-      @include zen-grid-item(1, 5);
+      @include zen-grid-item(2, 9);
       @include zen-clear(none);
     }
     #footer_4{
-      @include zen-grid-item(1, 6);
+      @include zen-grid-item(2, 11);
       @include zen-clear(none);
     }
   }
@@ -108,25 +108,25 @@ main.content,
 // Issues
 
 .issue-blocks{
-  @include zen-grid-item(6, 1);
+  @include zen-grid-item(12, 1);
   @include zen-clear();
   @media only screen and (min-width: 37.5em){
     &:nth-child(odd){
-      @include zen-grid-item(3, 4);
+      @include zen-grid-item(6, 7);
       @include zen-clear(none);
     }
     &:nth-child(even){
-      @include zen-grid-item(3, 1);
+      @include zen-grid-item(6, 1);
       @include zen-clear();
     }
   }
+
   @media only screen and (min-width: 80em){
-    $zen-column-count: 12;
     &:nth-child(2), 
     &:nth-child(6), 
     &:nth-child(10){
       @include zen-grid-item(3, 1);
-      @include zen-clear();
+      @include zen-clear(); 
     }
     &:nth-child(3), 
     &:nth-child(7),
@@ -167,14 +167,14 @@ article.type-page{
   .image-thumbnail{
     margin-bottom: 1em;
   }
+  img{ border-radius: 3px;}
   @media only screen and (min-width: 50em){
-    $zen-column-count: 6;
     .image-thumbnail{
-      @include zen-grid-item(2, 1);
+      @include zen-grid-item(4, 1);
       @include zen-clear();
     }
     .artist-content{
-      @include zen-grid-item(4, 3);
+      @include zen-grid-item(8, 5);
     }
   }
 }

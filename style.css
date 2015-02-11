@@ -275,6 +275,7 @@ main.content:after,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url(border-box);
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
@@ -294,6 +295,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -311,6 +313,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -329,6 +332,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -347,6 +351,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -365,6 +370,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -385,6 +391,7 @@ main.content:after,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url(border-box);
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
@@ -404,6 +411,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -422,6 +430,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -432,9 +441,9 @@ main.content:after,
   /* line 125, sass/_layout.scss */
   .issue-blocks:nth-child(2), .issue-blocks:nth-child(6), .issue-blocks:nth-child(10) {
     float: left;
-    width: 50%;
+    width: 25%;
     margin-left: 0%;
-    margin-right: -50%;
+    margin-right: -25%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -442,6 +451,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -450,9 +460,9 @@ main.content:after,
   /* line 131, sass/_layout.scss */
   .issue-blocks:nth-child(3), .issue-blocks:nth-child(7), .issue-blocks:nth-child(11) {
     float: left;
-    width: 50%;
-    margin-left: 50%;
-    margin-right: -100%;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -460,6 +470,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -468,9 +479,9 @@ main.content:after,
   /* line 137, sass/_layout.scss */
   .issue-blocks:nth-child(4), .issue-blocks:nth-child(8) {
     float: left;
-    width: 50%;
-    margin-left: 100%;
-    margin-right: -150%;
+    width: 25%;
+    margin-left: 50%;
+    margin-right: -75%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -478,6 +489,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -486,9 +498,9 @@ main.content:after,
   /* line 142, sass/_layout.scss */
   .issue-blocks:nth-child(5), .issue-blocks:nth-child(9) {
     float: left;
-    width: 50%;
-    margin-left: 150%;
-    margin-right: -200%;
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -496,6 +508,7 @@ main.content:after,
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -528,6 +541,10 @@ article.type-page {
 .artist .image-thumbnail {
   margin-bottom: 1em;
 }
+/* line 170, sass/_layout.scss */
+.artist img {
+  border-radius: 3px;
+}
 @media only screen and (min-width: 50em) {
   /* line 172, sass/_layout.scss */
   .artist .image-thumbnail {
@@ -542,6 +559,7 @@ article.type-page {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -560,6 +578,7 @@ article.type-page {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url(border-box);
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
