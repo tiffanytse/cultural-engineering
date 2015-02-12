@@ -5,6 +5,11 @@
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
 
+//* Add excerpt to pages
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
 
 //* Add featured image above title for individual page
 add_action( 'genesis_entry_header', 'single_post_featured_image', 5 );
@@ -15,7 +20,6 @@ function single_post_featured_image() {
     $img = genesis_get_image( array( 'format' => 'html', 'size' => genesis_get_option( 'image_size' ), 'attr' => array( 'class' => 'post-image' ) ) );
     printf( '%s', $img );
 }
-
 
 //* Customize the post meta function
 add_filter( 'genesis_post_meta', 'sp_post_meta_filter' );
@@ -74,11 +78,12 @@ function wpb_list_child_pages() {
   $pageChildren =  get_pages( array( 'child_of' => $post->ID, 'orderby'       => 'post_date', 'hierarchical' => '0' ) );
   if ( $pageChildren ) {
     foreach ( $pageChildren as $pageChild ) {
-      echo '<section class="issue-blocks issue-'. $pageChild->ID .'"><div class="inner"><a href="'. get_permalink($pageChild->ID) .'">'. get_the_post_thumbnail($pageChild->ID, 'medium').'<h2>' . $pageChild->post_title .'</h2>'. '</div></section></a>';
+      echo '<section class="issue-blocks issue-'. $pageChild->ID .'"><div class="inner"><a href="'. get_permalink($pageChild->ID) .'">'. get_the_post_thumbnail($pageChild->ID, 'medium').'<h2>' . $pageChild->post_title .'</h2>';
       if ($pageChild->post_excerpt){
         echo '<p>'. $pageChild->post_excerpt.'</p>';
       }
       echo get_post_meta($pageChild->ID, 'custom-field-name', true);
+      echo '</div></section></a>';
     }
   }
 }

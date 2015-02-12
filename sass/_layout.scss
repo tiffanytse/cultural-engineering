@@ -179,3 +179,6 @@ article.type-page{
   }
 }
 
+p.entry-meta{
+  @include rem-fallback(font-size, 1.125);
+}

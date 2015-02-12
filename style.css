@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: culturalengineering.ca
 */
 @import url("../genesis/style.css");
-/* line 158, sass/_mixins.scss */
+/* line 159, sass/_mixins.scss */
 .cf:before, .site-header:before, .banner-issue:before,
 .cf:after,
 .site-header:after,
@@ -44,6 +44,7 @@ Text Domain: culturalengineering.ca
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -54,7 +55,7 @@ Text Domain: culturalengineering.ca
   }
 }
 */
-/* line 22, sass/_culturalengineering-custom.scss */
+/* line 23, sass/_culturalengineering-custom.scss */
 [class^="i-"]:before, [class*=" i-"]:before,
 .custom-icon,
 .entry-tags i {
@@ -118,7 +119,7 @@ Text Domain: culturalengineering.ca
 }
 
 /* '' */
-/* line 1, sass/_typography.scss */
+/* line 6, sass/_typography.scss */
 h1,
 h2,
 h3,
@@ -152,14 +153,14 @@ h1.entry-title {
   color: #777;
 }
 
-/* line 5, sass/_layout.scss */
+/* line 7, sass/_layout.scss */
 .footer .wrap,
 main.content,
 .artist {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .footer .wrap:before, .footer .wrap:after,
 main.content:before,
 main.content:after,
@@ -181,7 +182,7 @@ main.content:after,
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 19, sass/_layout.scss */
+  /* line 20, sass/_layout.scss */
   .header .site-inner,
   .header .wrap {
     max-width: 1200px;
@@ -227,7 +228,7 @@ main.content:after,
   color: #df5900;
 }
 
-/* line 57, sass/_layout.scss */
+/* line 61, sass/_layout.scss */
 #footer_1,
 #footer_2,
 #footer_3,
@@ -235,10 +236,10 @@ main.content:after,
 .sponsors {
   padding-top: 1em;
   margin-top: 1em;
-  border-top: 1px solid #f5f5f5;
+  border-top: 1px solid whitesmoke;
 }
 @media only screen and (min-width: 60em) {
-  /* line 57, sass/_layout.scss */
+  /* line 61, sass/_layout.scss */
   #footer_1,
   #footer_2,
   #footer_3,
@@ -258,7 +259,7 @@ main.content:after,
   line-height: 1.5;
 }
 
-/* line 76, sass/_layout.scss */
+/* line 80, sass/_layout.scss */
 .site-footer .col-1,
 .site-footer #footer_1,
 .site-footer #footer_2,
@@ -438,7 +439,7 @@ main.content:after,
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 125, sass/_layout.scss */
+  /* line 127, sass/_layout.scss */
   .issue-blocks:nth-child(2), .issue-blocks:nth-child(6), .issue-blocks:nth-child(10) {
     float: left;
     width: 25%;
@@ -457,7 +458,7 @@ main.content:after,
     _overflow-y: visible;
     clear: left;
   }
-  /* line 131, sass/_layout.scss */
+  /* line 133, sass/_layout.scss */
   .issue-blocks:nth-child(3), .issue-blocks:nth-child(7), .issue-blocks:nth-child(11) {
     float: left;
     width: 25%;
@@ -476,7 +477,7 @@ main.content:after,
     _overflow-y: visible;
     clear: none;
   }
-  /* line 137, sass/_layout.scss */
+  /* line 138, sass/_layout.scss */
   .issue-blocks:nth-child(4), .issue-blocks:nth-child(8) {
     float: left;
     width: 25%;
@@ -495,7 +496,7 @@ main.content:after,
     _overflow-y: visible;
     clear: none;
   }
-  /* line 142, sass/_layout.scss */
+  /* line 143, sass/_layout.scss */
   .issue-blocks:nth-child(5), .issue-blocks:nth-child(9) {
     float: left;
     width: 25%;
@@ -585,6 +586,12 @@ article.type-page {
   }
 }
 
+/* line 182, sass/_layout.scss */
+p.entry-meta {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
 /* line 3, sass/_main.scss */
 html.mm-opened {
   margin-top: 0 !important;
@@ -621,7 +628,7 @@ html.mm-opened .logged-in .site-header {
 .mm-list li:after {
   margin-left: 0;
 }
-/* line 26, sass/_main.scss */
+/* line 27, sass/_main.scss */
 .mm-list li a,
 .mm-list li span {
   padding: 1em !important;
@@ -682,8 +689,10 @@ nav.nav-primary li.social-icon a {
   width: 40px;
   height: 40px;
   padding: .65em !important;
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   margin-left: 1em;
   margin-top: .5em;
@@ -747,7 +756,7 @@ a {
   color: #df5900;
 }
 
-/* line 122, sass/_main.scss */
+/* line 123, sass/_main.scss */
 .archive-pagination li a:hover,
 .archive-pagination .active a {
   background-color: #df5900;
@@ -795,8 +804,10 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   display: inline-block;
   color: rgba(255, 255, 255, 0.8);
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   font-size: 20px;
   font-size: 1.25rem;
@@ -821,7 +832,7 @@ a {
 }
 
 @media only screen and (min-width: 961px) {
-  /* line 175, sass/_main.scss */
+  /* line 176, sass/_main.scss */
   .banner-issue,
   .google-maps-builder-wrap {
     margin-top: 7px;
@@ -849,8 +860,8 @@ a {
 /* line 196, sass/_main.scss */
 .banner-issue .site-inner .description {
   width: 100%;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
@@ -910,11 +921,6 @@ a {
   color: #fff;
 }
 
-/* line 251, sass/_main.scss */
-.page-id-18 .issue-blocks {
-  line-height: 0;
-}
-
 /* line 256, sass/_main.scss */
 .issue-blocks {
   padding: 0;
@@ -925,55 +931,82 @@ a {
 .issue-blocks .inner {
   background-color: #fff;
   padding-bottom: 1em;
+  border: 1px solid #ddd;
 }
-/* line 264, sass/_main.scss */
+@media only screen and (min-width: 801px) {
+  /* line 260, sass/_main.scss */
+  .issue-blocks .inner {
+    border: 0;
+  }
+}
+/* line 268, sass/_main.scss */
 .issue-blocks h2 {
-  padding: .5em .5em 1em;
-  text-transform: capitalize;
-  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 1em 1em 0;
   color: #df5900;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
-/* line 270, sass/_main.scss */
+@media only screen and (min-width: 75em) {
+  /* line 268, sass/_main.scss */
+  .issue-blocks h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+/* line 280, sass/_main.scss */
 .issue-blocks h4, .issue-blocks p {
   padding: 1em 1em 0;
 }
-/* line 273, sass/_main.scss */
+/* line 283, sass/_main.scss */
 .issue-blocks h4 {
   color: #df5900;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
-/* line 276, sass/_main.scss */
+@media only screen and (min-width: 75em) {
+  /* line 283, sass/_main.scss */
+  .issue-blocks h4 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+/* line 290, sass/_main.scss */
 .issue-blocks p {
   color: #222222;
+  line-height: 1.5em;
 }
 
 /* Footer Widgets */
-@media only screen and (min-width: 60em) {
-  /* line 284, sass/_main.scss */
+@media only screen and (min-width: 1201px) {
+  /* line 300, sass/_main.scss */
   .footer-widgets .entry,
   .footer-widgets li {
     border-bottom: 0;
   }
 }
-/* line 292, sass/_main.scss */
+/* line 307, sass/_main.scss */
 .site-footer .social-icon .fa-hidden {
   position: static;
 }
-/* line 295, sass/_main.scss */
+/* line 310, sass/_main.scss */
 .site-footer .social-icon i {
   display: none;
 }
-/* line 298, sass/_main.scss */
+/* line 313, sass/_main.scss */
 .site-footer p {
   margin: 0 0 .5em;
 }
 @media only screen and (min-width: 60em) {
-  /* line 302, sass/_main.scss */
+  /* line 317, sass/_main.scss */
   .site-footer .sawvideo {
     margin-bottom: 3em;
   }
 }
 
-/* line 309, sass/_main.scss */
+/* line 324, sass/_main.scss */
 .sponsors a {
   text-indent: 100%;
   white-space: nowrap;
@@ -985,18 +1018,18 @@ a {
   width: 150px;
   margin: .5em .5em .5em 0;
   padding: .5em;
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   background-position: center center;
   opacity: .6;
 }
-/* line 320, sass/_main.scss */
+/* line 335, sass/_main.scss */
 .sponsors a:hover {
   background-color: #f5f5f5;
   opacity: 1;
 }
-/* line 325, sass/_main.scss */
+/* line 340, sass/_main.scss */
 .sponsors .cc {
   background-image: url("images/canada-council.png");
   background-repeat: no-repeat;
@@ -1010,7 +1043,7 @@ a {
     background-repeat: no-repeat;
   }
 }
-/* line 329, sass/_main.scss */
+/* line 344, sass/_main.scss */
 .sponsors .ottawa {
   background-image: url("images/ottawa.png");
   background-repeat: no-repeat;
@@ -1024,7 +1057,7 @@ a {
     background-repeat: no-repeat;
   }
 }
-/* line 333, sass/_main.scss */
+/* line 348, sass/_main.scss */
 .sponsors .case {
   background-image: url("images/case.png");
   background-repeat: no-repeat;
@@ -1038,7 +1071,7 @@ a {
     background-repeat: no-repeat;
   }
 }
-/* line 337, sass/_main.scss */
+/* line 352, sass/_main.scss */
 .sponsors .oac {
   background-image: url("images/ontario-arts-council.png");
   background-repeat: no-repeat;
@@ -1053,14 +1086,14 @@ a {
   }
 }
 
-/* line 343, sass/_main.scss */
+/* line 358, sass/_main.scss */
 a.more-link {
   display: block;
   clear: both;
   text-align: right;
 }
 
-/* line 349, sass/_main.scss */
+/* line 364, sass/_main.scss */
 .sawvideo {
   margin-top: 1em;
   text-indent: 100%;
@@ -1074,8 +1107,8 @@ a.more-link {
   background-repeat: no-repeat;
   margin: .5em .5em .5em 0;
   padding: .5em;
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   background-position: center center;
   opacity: .8;
@@ -1088,27 +1121,33 @@ a.more-link {
     background-repeat: no-repeat;
   }
 }
-/* line 362, sass/_main.scss */
+/* line 377, sass/_main.scss */
 .sawvideo:hover {
   background-color: #f5f5f5;
   opacity: 1;
 }
 
-/* line 368, sass/_main.scss */
+/* line 383, sass/_main.scss */
 .alignleft img {
   margin: 0 24px 24px 0;
 }
 
-/* line 372, sass/_main.scss */
+/* line 387, sass/_main.scss */
 .site-footer {
   text-align: left;
 }
 
-/* line 376, sass/_main.scss */
+/* line 391, sass/_main.scss */
 .creds {
   clear: both;
   margin-top: 5em;
   float: right;
   text-align: right;
   font-size: .75em;
+}
+
+/* line 399, sass/_main.scss */
+p.entry-meta time {
+  font-size: 18px;
+  font-size: 1.125rem;
 }
