@@ -97,16 +97,22 @@ nav.nav-primary li.social-icon {
 }
 
 nav.nav-primary {
-  background: $black;
   #menu-main-menu{
     float: right;
     padding-right: 1em;
     width: auto;
   }
   &#menu{
+    background: none;
+  }
+  .wrap{
     position: relative;
+  }
+  #menu-main-menu{
+    position: absolute;
+    top: -3.5em;
+    right: 0;
     z-index: 1000;
-    margin-top: -3.1em;
   }
   .genesis-nav-menu a{
     padding: 10px 1em;
@@ -171,14 +177,6 @@ a{
 		@include element-invisible;
 	}
 }
-
-.banner-issue, 
-.google-maps-builder-wrap{
-  @media only screen and (min-width: 961px){  
-    margin-top: 7px;
-  }
-}
-
 
 .banner-issue{
   background-size: cover;

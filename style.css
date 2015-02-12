@@ -586,12 +586,6 @@ article.type-page {
   }
 }
 
-/* line 182, sass/_layout.scss */
-p.entry-meta {
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-
 /* line 3, sass/_main.scss */
 html.mm-opened {
   margin-top: 0 !important;
@@ -726,56 +720,61 @@ nav.nav-primary li.social-icon a i.icon-facebook {
   padding-left: 8px;
 }
 
-/* line 99, sass/_main.scss */
-nav.nav-primary {
-  background: #222222;
-}
-/* line 101, sass/_main.scss */
+/* line 100, sass/_main.scss */
 nav.nav-primary #menu-main-menu {
   float: right;
   padding-right: 1em;
   width: auto;
 }
-/* line 106, sass/_main.scss */
+/* line 105, sass/_main.scss */
 nav.nav-primary#menu {
+  background: none;
+}
+/* line 108, sass/_main.scss */
+nav.nav-primary .wrap {
   position: relative;
-  z-index: 1000;
-  margin-top: -3.1em;
 }
 /* line 111, sass/_main.scss */
+nav.nav-primary #menu-main-menu {
+  position: absolute;
+  top: -3.5em;
+  right: 0;
+  z-index: 1000;
+}
+/* line 117, sass/_main.scss */
 nav.nav-primary .genesis-nav-menu a {
   padding: 10px 1em;
 }
-/* line 114, sass/_main.scss */
+/* line 120, sass/_main.scss */
 nav.nav-primary .social-icon a {
   margin-left: inherit;
 }
 
-/* line 119, sass/_main.scss */
+/* line 125, sass/_main.scss */
 a {
   color: #df5900;
 }
 
-/* line 123, sass/_main.scss */
+/* line 129, sass/_main.scss */
 .archive-pagination li a:hover,
 .archive-pagination .active a {
   background-color: #df5900;
 }
 
-/* line 127, sass/_main.scss */
+/* line 133, sass/_main.scss */
 .site-header {
   background: #222222;
   min-height: 52px;
 }
-/* line 131, sass/_main.scss */
+/* line 137, sass/_main.scss */
 .site-header .title-area {
   padding: 0;
 }
-/* line 132, sass/_main.scss */
+/* line 138, sass/_main.scss */
 .site-header .wrap {
   padding: 13px;
 }
-/* line 133, sass/_main.scss */
+/* line 139, sass/_main.scss */
 .site-header .site-title {
   text-align: left;
   font-size: 22px;
@@ -789,16 +788,16 @@ a {
   z-index: 1001;
   max-width: 375px;
 }
-/* line 145, sass/_main.scss */
+/* line 151, sass/_main.scss */
 .site-header a {
   color: #fff;
 }
-/* line 147, sass/_main.scss */
+/* line 153, sass/_main.scss */
 .site-header a:hover {
   color: #cccccc;
 }
 
-/* line 154, sass/_main.scss */
+/* line 160, sass/_main.scss */
 #mobile-header i {
   padding: .1em .3em .15em .25em;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -817,11 +816,11 @@ a {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
-/* line 165, sass/_main.scss */
+/* line 171, sass/_main.scss */
 #mobile-header a:hover i {
   border: 1px solid #df5900;
 }
-/* line 170, sass/_main.scss */
+/* line 176, sass/_main.scss */
 #mobile-header span {
   position: absolute !important;
   height: 1px;
@@ -831,33 +830,25 @@ a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@media only screen and (min-width: 961px) {
-  /* line 176, sass/_main.scss */
-  .banner-issue,
-  .google-maps-builder-wrap {
-    margin-top: 7px;
-  }
-}
-
-/* line 183, sass/_main.scss */
+/* line 181, sass/_main.scss */
 .banner-issue {
   background-size: cover;
   background-position: 0 -75px;
   background-attachment: fixed;
 }
-/* line 189, sass/_main.scss */
+/* line 187, sass/_main.scss */
 .banner-issue .site-inner {
   position: relative;
   height: 425px;
   font-size: 90%;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 189, sass/_main.scss */
+  /* line 187, sass/_main.scss */
   .banner-issue .site-inner {
     height: 500px;
   }
 }
-/* line 196, sass/_main.scss */
+/* line 194, sass/_main.scss */
 .banner-issue .site-inner .description {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -869,7 +860,7 @@ a {
   margin: 2em 0;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 196, sass/_main.scss */
+  /* line 194, sass/_main.scss */
   .banner-issue .site-inner .description {
     max-width: 550px;
     position: relative;
@@ -877,7 +868,7 @@ a {
     margin: 0 auto;
   }
 }
-/* line 210, sass/_main.scss */
+/* line 208, sass/_main.scss */
 .banner-issue .site-inner .newest-issue-url {
   background-color: #df5900;
   color: #fff;
@@ -889,57 +880,57 @@ a {
 }
 
 /* Hide desktop menu when mobile */
-/* line 224, sass/_main.scss */
+/* line 222, sass/_main.scss */
 .site-container .nav-primary {
   display: none;
 }
 
 @media only screen and (min-width: 961px) {
-  /* line 229, sass/_main.scss */
+  /* line 227, sass/_main.scss */
   #mobile-header {
     display: none;
   }
 
-  /* line 232, sass/_main.scss */
+  /* line 230, sass/_main.scss */
   .site-container .nav-primary {
     display: block;
   }
 }
-/* line 237, sass/_main.scss */
+/* line 235, sass/_main.scss */
 .home .post-25 {
   display: none;
 }
 
-/* line 241, sass/_main.scss */
+/* line 239, sass/_main.scss */
 .home .site-inner {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 246, sass/_main.scss */
+/* line 244, sass/_main.scss */
 .description h2 {
   color: #fff;
 }
 
-/* line 256, sass/_main.scss */
+/* line 254, sass/_main.scss */
 .issue-blocks {
   padding: 0;
   box-sizing: border-box;
   margin-bottom: 1em;
 }
-/* line 260, sass/_main.scss */
+/* line 258, sass/_main.scss */
 .issue-blocks .inner {
   background-color: #fff;
   padding-bottom: 1em;
   border: 1px solid #ddd;
 }
 @media only screen and (min-width: 801px) {
-  /* line 260, sass/_main.scss */
+  /* line 258, sass/_main.scss */
   .issue-blocks .inner {
     border: 0;
   }
 }
-/* line 268, sass/_main.scss */
+/* line 266, sass/_main.scss */
 .issue-blocks h2 {
   text-transform: uppercase;
   font-weight: 900;
@@ -950,30 +941,30 @@ a {
   font-size: 1.5rem;
 }
 @media only screen and (min-width: 75em) {
-  /* line 268, sass/_main.scss */
+  /* line 266, sass/_main.scss */
   .issue-blocks h2 {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
-/* line 280, sass/_main.scss */
+/* line 278, sass/_main.scss */
 .issue-blocks h4, .issue-blocks p {
   padding: 1em 1em 0;
 }
-/* line 283, sass/_main.scss */
+/* line 281, sass/_main.scss */
 .issue-blocks h4 {
   color: #df5900;
   font-size: 24px;
   font-size: 1.5rem;
 }
 @media only screen and (min-width: 75em) {
-  /* line 283, sass/_main.scss */
+  /* line 281, sass/_main.scss */
   .issue-blocks h4 {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
-/* line 290, sass/_main.scss */
+/* line 288, sass/_main.scss */
 .issue-blocks p {
   color: #222222;
   line-height: 1.5em;
@@ -981,32 +972,32 @@ a {
 
 /* Footer Widgets */
 @media only screen and (min-width: 1201px) {
-  /* line 300, sass/_main.scss */
+  /* line 298, sass/_main.scss */
   .footer-widgets .entry,
   .footer-widgets li {
     border-bottom: 0;
   }
 }
-/* line 307, sass/_main.scss */
+/* line 305, sass/_main.scss */
 .site-footer .social-icon .fa-hidden {
   position: static;
 }
-/* line 310, sass/_main.scss */
+/* line 308, sass/_main.scss */
 .site-footer .social-icon i {
   display: none;
 }
-/* line 313, sass/_main.scss */
+/* line 311, sass/_main.scss */
 .site-footer p {
   margin: 0 0 .5em;
 }
 @media only screen and (min-width: 60em) {
-  /* line 317, sass/_main.scss */
+  /* line 315, sass/_main.scss */
   .site-footer .sawvideo {
     margin-bottom: 3em;
   }
 }
 
-/* line 324, sass/_main.scss */
+/* line 322, sass/_main.scss */
 .sponsors a {
   text-indent: 100%;
   white-space: nowrap;
@@ -1024,12 +1015,12 @@ a {
   background-position: center center;
   opacity: .6;
 }
-/* line 335, sass/_main.scss */
+/* line 333, sass/_main.scss */
 .sponsors a:hover {
   background-color: #f5f5f5;
   opacity: 1;
 }
-/* line 340, sass/_main.scss */
+/* line 338, sass/_main.scss */
 .sponsors .cc {
   background-image: url("images/canada-council.png");
   background-repeat: no-repeat;
@@ -1043,7 +1034,7 @@ a {
     background-repeat: no-repeat;
   }
 }
-/* line 344, sass/_main.scss */
+/* line 342, sass/_main.scss */
 .sponsors .ottawa {
   background-image: url("images/ottawa.png");
   background-repeat: no-repeat;
@@ -1057,7 +1048,7 @@ a {
     background-repeat: no-repeat;
   }
 }
-/* line 348, sass/_main.scss */
+/* line 346, sass/_main.scss */
 .sponsors .case {
   background-image: url("images/case.png");
   background-repeat: no-repeat;
@@ -1071,7 +1062,7 @@ a {
     background-repeat: no-repeat;
   }
 }
-/* line 352, sass/_main.scss */
+/* line 350, sass/_main.scss */
 .sponsors .oac {
   background-image: url("images/ontario-arts-council.png");
   background-repeat: no-repeat;
@@ -1086,14 +1077,14 @@ a {
   }
 }
 
-/* line 358, sass/_main.scss */
+/* line 356, sass/_main.scss */
 a.more-link {
   display: block;
   clear: both;
   text-align: right;
 }
 
-/* line 364, sass/_main.scss */
+/* line 362, sass/_main.scss */
 .sawvideo {
   margin-top: 1em;
   text-indent: 100%;
@@ -1121,23 +1112,23 @@ a.more-link {
     background-repeat: no-repeat;
   }
 }
-/* line 377, sass/_main.scss */
+/* line 375, sass/_main.scss */
 .sawvideo:hover {
   background-color: #f5f5f5;
   opacity: 1;
 }
 
-/* line 383, sass/_main.scss */
+/* line 381, sass/_main.scss */
 .alignleft img {
   margin: 0 24px 24px 0;
 }
 
-/* line 387, sass/_main.scss */
+/* line 385, sass/_main.scss */
 .site-footer {
   text-align: left;
 }
 
-/* line 391, sass/_main.scss */
+/* line 389, sass/_main.scss */
 .creds {
   clear: both;
   margin-top: 5em;
@@ -1146,7 +1137,7 @@ a.more-link {
   font-size: .75em;
 }
 
-/* line 399, sass/_main.scss */
+/* line 397, sass/_main.scss */
 p.entry-meta time {
   font-size: 18px;
   font-size: 1.125rem;
