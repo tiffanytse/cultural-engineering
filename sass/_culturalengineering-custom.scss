@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'culturalengineering-custom';
-  src: url('font/culturalengineering-custom.eot?48940871');
-  src: url('font/culturalengineering-custom.eot?48940871#iefix') format('embedded-opentype'),
-       url('font/culturalengineering-custom.woff?48940871') format('woff'),
-       url('font/culturalengineering-custom.ttf?48940871') format('truetype'),
-       url('font/culturalengineering-custom.svg?48940871#culturalengineering-custom') format('svg');
+  src: url('font/culturalengineering-custom.eot?90208248');
+  src: url('font/culturalengineering-custom.eot?90208248#iefix') format('embedded-opentype'),
+       url('font/culturalengineering-custom.woff?90208248') format('woff'),
+       url('font/culturalengineering-custom.ttf?90208248') format('truetype'),
+       url('font/culturalengineering-custom.svg?90208248#culturalengineering-custom') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,13 +14,13 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'culturalengineering-custom';
-    src: url('../font/culturalengineering-custom.svg?48940871#culturalengineering-custom') format('svg');
+    src: url('../font/culturalengineering-custom.svg?90208248#culturalengineering-custom') format('svg');
   }
 }
 */
  
  [class^="i-"]:before, [class*=" i-"]:before, 
- .custom-icon{
+ .custom-icon {
   font-family: "culturalengineering-custom";
   font-style: normal;
   font-weight: normal;
@@ -51,9 +51,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.i-facebook:before { content: '\e800'; } /* '' */
-.i-twitter:before { content: '\e801'; } /* '' */
-.i-tags:before { content: '\e802'; } /* '' */
-.i-instagram:before { content: '\e803'; } /* '' */
-.i-menu:before { content: '\e804'; } /* '' */
-.i-link-ext:before { content: '\e805'; } /* '' */
+.i-menu:before { content: '\e800'; } /* '' */
+.i-tags:before { content: '\e801'; } /* '' */
+.i-link-ext:before { content: '\e802'; } /* '' */
+.i-map-sawvideo:before { content: '\e803'; } /* '' */ 
