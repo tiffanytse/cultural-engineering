@@ -1,5 +1,10 @@
 <?php
-
+//* Replace Favicon
+remove_action('wp_head', 'genesis_load_favicon');
+add_filter( 'genesis_pre_load_favicon', 'custom_favicon' );
+function custom_favicon( $favicon_url ) {
+  return ''. trailingslashit( get_bloginfo('url') ) .'/wp-content/themes/cultural-engineering/favicon.ico';
+}
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
