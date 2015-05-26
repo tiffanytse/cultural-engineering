@@ -107,6 +107,54 @@ main.content,
 
 // Issues
 
+.content .entry{
+  @include zen-clear();
+}
+
+.issue-blocks.issue-display{
+  @include zen-grid-item(12, 1);
+  @include zen-clear();
+  @media only screen and (min-width: 37.5em){
+    &:nth-child(odd){
+      @include zen-grid-item(6, 7);
+      @include zen-clear();
+    }
+    &:nth-child(even){
+      @include zen-grid-item(6, 1);
+      @include zen-clear(none);
+    }
+  }
+
+  @media only screen and (min-width: 80em){
+    &:nth-child(1), 
+    &:nth-child(5), 
+    &:nth-child(9){
+      @include zen-grid-item(3, 1);
+      @include zen-clear(); 
+    }
+    &:nth-child(2), 
+    &:nth-child(6),
+    &:nth-child(10){
+      @include zen-grid-item(3, 4);
+      @include zen-clear(none);
+    }
+    &:nth-child(3), 
+    &:nth-child(7){
+      @include zen-grid-item(3, 7);
+      @include zen-clear(none);
+    }
+    &:nth-child(4), 
+    &:nth-child(8){
+      @include zen-grid-item(3, 10);
+      @include zen-clear(none);
+    }
+  }
+
+
+}
+
+
+
 .issue-blocks{
   @include zen-grid-item(12, 1);
   @include zen-clear();
