@@ -7,7 +7,7 @@
 */
 
 // Add our custom loop
-add_action( 'genesis_loop', 'issue_loop' );
+add_action( 'genesis_loop', 'issue_loop', 5 );
 
 function issue_loop() {
 
@@ -24,7 +24,7 @@ function issue_loop() {
 		// loop through posts
 		while( $loop->have_posts() ): $loop->the_post();
 
-		echo '<a href="' . get_permalink() . '" class="clearfix issue-blocks">';
+		echo '<a href="' . get_permalink() . '" class="clearfix issue-blocks issue-display">';
 		echo '<div class="inner">';
 			echo get_the_post_thumbnail( $post_id, 'medium' ); 
 			echo '<h4>' . get_the_title() . '</h4>';
